@@ -1,0 +1,115 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title DownTown
+  style 
+    include ../static/style.css 
+    
+  link(rel='preconnect' href='https://fonts.gstatic.com')
+  link(href='https://fonts.googleapis.com/css2?family=Mate+SC&display=swap' rel='stylesheet')
+  link(rel='preconnect' href='https://fonts.gstatic.com')
+  link(href='https://fonts.googleapis.com/css2?family=Exo+2:wght@100&display=swap' rel='stylesheet')
+  link(rel='preconnect' href='https://fonts.gstatic.com')
+  link(href='https://fonts.googleapis.com/css2?family=Nunito:ital@1&display=swap' rel='stylesheet')
+  link(rel='preconnect' href='https://fonts.gstatic.com')
+  link(rel='stylesheet' media='screen and (max-width: 1230px)' href='../static/phone.css')
+  link(rel='stylesheet' media='screen and (max-width: 648px)' href='../static/phone_1.css')
+nav#navbar
+  #logo
+    img(src='../static/logos/depositphotos_9460629-stock-illustration-house-logo.jpg' alt='downtown.drs')
+  ul
+    li.item
+      a(href='#home') Home 
+    li.item
+      a(href='#about-container') Services
+    li.item
+      a(href='#property-section') Properties
+    li.item
+      a(href='#clients-section') Customers
+    li.item
+      a(href='#contact-section') Contact Us
+section#home
+  div
+    div
+      h1.hprimary.center The Simplest
+      h1.hprimary.center Way to Find Property
+    p.p-primary.center Tired of paying endless visits to real estate agents?
+    p.p-primary.center
+      | We promise to be your ultimate relief in this relentless quest of your perfect
+      | adobe.
+  input(type='text' placeholder='Search Property')
+section#about-container
+  h1.center.hprimary Our Services
+  hr
+  #about
+    .box
+      // <img src="image/prop2.jpg" alt="">
+      h2.hsecondary.center  No Payment to intermediate Agents
+      p.p-primary.center
+        | We directly bring you in contact with the concerned brokers without
+        | involving any intermediate Agents.
+    .box
+      // <img src="image/prop3.jpg" alt="">
+      h2.hsecondary.center All Cash Offer
+      p.p-primary.center We List the genuine price in cash alongwith the concerned property.
+    .box
+      // <img src="image/prop13.jpg" alt="">
+      h2.hsecondary.center Verified Database
+      p.p-primary.center
+        | The listing of properties alongwith its specifications and details are
+        | properly verified by Genuine Agents.
+section#property-section
+  h1.hprimary.center
+    u PROPERTIES
+  hr
+  #property-items
+    .property-box
+      p.p-primary.center Vintage Villa
+      img(src='../static/image/prop5.jpg' alt='')
+    .property-box
+      p.p-primary.center Nature Court
+      img(src='../static/image/prop13.jpg' alt='')
+    .property-box
+      p.p-primary.center Baba Ka Bangla
+      img(src='../static/image/prop14.jpg' alt='')
+section#clients-section
+  h1.hprimary.center
+    u  Our Clients
+  hr
+  #clients
+    .box
+      img(src='../static/image/michael.jpg' alt='')
+      p.p-primary.center chinu bhaiya
+    .box
+      img(src='../static/image/jennifer-lawrence.jpg')
+      p.p-primary.center Jenifer Lawrence
+    .box
+      img(src='../static/image/jennifer-lawrence.jpg')
+      p.p-primary.center Jenifer Lawrence
+section#contact-section
+  h1.hprimary.center
+    u  Contact Us
+  hr
+  #contact
+    form(action='')
+      .formclass
+        label(for='name')  Name:
+        br
+        input#name(type='text' name='name' placeholder='Enter your Name')
+      .formclass
+        label(for='Email') E-Mail:
+        br
+        input#Email(type='text' name='Email' placeholder='Enter your Email')
+      .formclass
+        label(for='number') Contact Number:
+        br
+        input#number(type='text' name='number' placeholder='Enter your Contact Number')
+      .btn
+        input(type='button' value='Submit')
+footer#footer
+  .center
+    | Copyright &copy; www.downtown.com.All rights Reserved!
+script 
+    include ../static/index.js

@@ -1,0 +1,52 @@
+#logo img{
+    height: 30px;
+    /* margin: 5px 10px; */
+}
+#logo{
+    margin: -10px -16px;
+}
+/* #navbar ul{
+    flex-direction: column;
+    justify-content: flex-start;
+} */
+#navbar ul li{
+    margin: 0px -2px;
+}
+#navbar ul li a{
+    font-size: 12px;
+}
+#navbar::before{
+    height: 12%;
+}
+#home{
+    height: auto;
+}
+#home input{
+    height: 25px;
+    width: 50%;
+}
+
+#home input::placeholder{
+    font-size: 13px;
+    padding: 10px 10px;
+}
+
+#property-items .property-box img{
+    height: 100px;
+}
+#clients img{
+    height: 100px;
+}
+#contact-section label{
+    font-size: 13px;
+}
+/* utility classes */
+.hprimary{
+    font-size:x-large;
+}
+.hsecondary{
+    font-size: 15px;
+}
+.p-primary{
+    font-size:10px;
+}

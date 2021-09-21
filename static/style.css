@@ -1,0 +1,321 @@
+    
+  /* @import url('https://fonts.gstatic.com'); */
+  @import url('https://fonts.googleapis.com/css2?family=Mate+SC&display=swap');
+  /* @import url('https://fonts.gstatic.com'); */
+  @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@100&display=swap');
+  /* @import url('https://fonts.gstatic.com'); */
+  @import url('https://fonts.googleapis.com/css2?family=Nunito:ital@1&display=swap');
+
+/* css reset */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    height: auto;
+    width: auto;
+}
+/* navbar logo */
+
+#logo img{
+    height: 50px;
+    margin: 15px 23px;
+    border-radius: 7px;
+}
+
+#logo{
+    margin: -2px -6px;
+}
+
+/* navigation bar */
+#navbar{
+    display: flex;  
+    align-items: center;
+    top: 0px;
+    /* position: relative; */
+    /* position: sticky ; */
+
+}
+#navbar::before{
+    content: "";
+    background-color: rgb(8, 8, 95);
+    position: absolute;
+    /* position: sticky; */
+    z-index:-1;
+    height: 12%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    /* opacity: 0.8; */
+}
+
+/* navigation bar list styling */
+#navbar ul{
+    display: flex;
+    /* margin: 10px 525px; */
+    
+}
+
+#navbar ul li{
+    margin: 10px 20px;
+    list-style: none;
+    font-family: 'Mate SC', serif;
+}
+
+#navbar ul li a{
+    text-decoration: none;
+    display: block;
+    padding: 3px 10px;
+    font-size: 20px;
+    border-radius: 17px;
+    color: white;
+
+}
+#navbar ul li a:hover{
+    color: rgb(7, 7, 70);
+    background-color: white;
+}
+
+/* home */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items:center;
+    padding: 65px 50px;
+    height: 84vh;
+
+}
+#home::before{
+    content: "";
+    position: absolute;
+    background: url('/static/image/prop10.jpg') no-repeat center center/cover;
+    height: 120%;
+    width: 100%;
+    z-index: -2;
+    opacity: 0.7;
+    top: 0px;
+    left: 0px;
+}
+#home div{
+    padding: 20px 20px;
+}
+#home h1{
+    color: rgb(8, 8, 95);
+    
+   
+
+
+}
+#home p{
+    font-family: 'Mate SC', serif;
+    /* color: rgb(3, 19, 39); */
+    font-weight: 600;
+    color: black;
+    text-shadow: 0px 0px 1px white;
+    
+
+}
+#home input{
+    border-radius: 34px;
+    text-align: center;
+    height: 49px;
+    width: 631px;
+    background-color: white;
+    color: black;
+    border: 3px solid darkblue;
+    margin: 10px 20px;
+    font-size: 1.3rem;
+
+
+}
+/* Our services */
+#about-container{
+    margin-top: 150px;
+    background: rgb(224, 225, 231);
+    height: 380px;
+}
+#about h2{
+    margin: 10px 50px;
+}
+#about{
+    display: flex;
+    margin-top: 100px;
+
+}
+#about .box{
+    border: 4px solid rgb(8, 8, 95);
+    border-radius: 15px;
+    margin: 10px 10px;
+    height: auto;
+    width: 30%;
+    padding: 10px 10px;
+    background: rgb(206, 204, 228);
+}
+
+
+/* property */
+#property-section{
+    margin-top: 90px;    
+    background: rgb(224, 225, 231);
+    height: 464px;
+}
+#property-items{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 30px;
+    margin-top: 80px;
+    grid-gap: 1rem;
+}
+#property-items .property-box{
+    border: 4px solid rgb(8, 8, 95);
+    padding: 12px 26px;
+    border-radius: 22px;
+    /* align-items: center; */
+    /* background: f2f2f2; */
+    /* margin: 0px 14px; */
+    text-align: center;
+
+}
+#property-items .property-box img{
+    height: 215px;
+    border-radius: 10px;
+    border:3px solid grey;
+    
+
+}
+
+/* our customers*/
+#clients-section{
+    margin-top: 90px;
+    background: rgb(224, 225, 231);
+    height: 464px;
+}
+
+#clients{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+    margin: 30px;
+    margin-top: 65px;
+    
+}
+#clients .box{
+    border: 4px solid rgb(8, 8, 95);
+    padding: 12px 26px;
+    border-radius: 22px;
+    background: f2f2f2;
+    /* margin: 16px 128px; */
+    padding-top: 25px;  
+    text-align: center;
+}
+#clients img{
+    height: 223px;
+    /* margin: auto; */
+    border-radius: 25px;
+
+}
+
+/* contact us */
+#contact-section{
+    position: relative;
+    margin-top: -3px;
+    /* margin-bottom: 70px; */
+    background: rgb(177, 194, 218);
+    height: 546px;
+}
+
+#contact {
+    margin-top: 65px;  
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#contact form {
+    border: 4px solid rgb(8, 8, 95);
+    border-radius: 54px;
+    width: 90%;
+    padding: 15px 16px;
+    margin: 20px;
+    
+}
+/* #contact .formclass{
+    width: 50%;
+    padding: 7px 99px;
+    margin: 10px 10px;
+} */
+
+#contact input{
+    width: 62%;
+    height: 30px;
+    border-radius: 23px;
+    text-align: center;
+    font-size: 1.1rem;
+    margin: 7px 57px;
+    padding: 2px 11px;
+}
+#contact label{
+    font-size: 1.2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: inline-block;
+}
+#contact form button{
+    width: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: rgb(8, 8, 95);
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    background: rgb(100, 154, 216);
+    border-radius: 15px;
+    border: 2.2px solid black;
+    padding: 3px;
+    outline: none;
+    height: 32px;
+    font-weight:550;
+    font-size: 18px;
+}
+#contact form button:hover{
+    background: rgb(8,8,100);
+    color: red;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+/* footer */
+footer{
+    color: white;
+    background: #00052e;
+    padding: 2px;
+    position: realative;
+    bottom: 0;
+    /* display: block; */
+}
+
+
+/* utility classes */
+.hprimary{
+    font-size: 3rem;
+    color: rgb(8, 8, 95);
+    font-family: 'Nunito', sans-serif;
+}
+.hsecondary{
+    font-size: 1.5rem;
+    font-family: 'Mate SC', serif;
+}
+.p-primary{
+    font-size: 1rem;
+    
+    font-family: 'Mate SC', serif;
+}
+.center{
+    text-align: center;
+}
+

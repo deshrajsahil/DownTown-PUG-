@@ -1,0 +1,30 @@
+//- layout.pug
+doctype html    
+html
+  head
+    title Down-Town
+    block scripts
+      script
+        include ../static/index.js
+    block style     
+      style 
+        include ../static/style.css
+  body
+    nav#navbar
+        #logo
+            img(src='../static/logos/depositphotos_9460629-stock-illustration-house-logo.jpg' alt='downtown.drs')
+        ul
+            li.item
+               a(href='/') Home 
+            li.item
+              a(href='#about-container') Services
+            li.item
+             a(href='#property-section') Properties
+            li.item
+             a(href='#clients-section') Customers
+            li.item
+              a(href='/contact') Contact Us
+    block content
+    footer
+        .center
+          | Copyright &copy; www.downtown.com.All rights Reserved!

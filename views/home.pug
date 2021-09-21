@@ -1,0 +1,65 @@
+extends base.pug
+
+block scripts
+  script(src="../static/index.js") 
+
+block style 
+  style 
+    include ../static/style.css
+
+block content 
+    section#home
+        div
+            div
+            h1.hprimary.center The Simplest
+            h1.hprimary.center Way to Find Property
+            p.p-primary.center Tired of paying endless visits to real estate agents?
+            p.p-primary.center We promise to be your ultimate relief in this relentless quest of your perfect adobe.
+        input(type='text' placeholder='Search Property')
+
+    section#about-container
+         h1.center.hprimary 
+           u Our Services
+           hr
+         #about
+           .box
+             h2.hsecondary.center  No Payment to intermediate Agents
+             p.p-primary.center
+               | We directly bring you in contact with the concerned brokers without
+               | involving any intermediate Agents.
+           .box
+             h2.hsecondary.center All Cash Offer
+             p.p-primary.center We List the genuine price in cash alongwith the concerned property.
+           .box
+              h2.hsecondary.center Verified Database
+              p.p-primary.center
+               | The listing of properties alongwith its specifications and details are
+               | properly verified by Genuine Agents.
+    section#property-section
+        h1.hprimary.center
+          u PROPERTIES
+          hr
+        #property-items
+            .property-box
+              p.p-primary.center Vintage Villa
+              img(src='../static/image/prop5.jpg' alt='')
+            .property-box
+              p.p-primary.center Nature Court
+              img(src='../static/image/prop13.jpg' alt='')
+            .property-box
+              p.p-primary.center Baba Ka Bangla
+              img(src='../static/image/prop14.jpg' alt='')
+    section#clients-section
+      h1.hprimary.center
+        u  Our Clients
+        hr
+      #clients
+        .box
+          img(src='../static/image/michael.jpg' alt='')
+          p.p-primary.center chinu bhaiya
+        .box
+          img(src='../static/image/jennifer-lawrence.jpg')
+          p.p-primary.center Jenifer Lawrence
+        .box
+          img(src='../static/image/jennifer-lawrence.jpg')
+          p.p-primary.center Jenifer Lawrence
